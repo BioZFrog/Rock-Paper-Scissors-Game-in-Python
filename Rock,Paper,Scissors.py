@@ -1,15 +1,16 @@
 import random
 import time
 
-Done = False
-wins, falses, ties = 0, 0, 0 
-
 print("--------___------------------Rock, Paper, Scissors Game in Python------------------___--------")
 time.sleep(3)
+
+# Game Loop
+Done = False
 while not Done:
     choice = input("\nEnter a choice:  ")
     computer_choice = random.choice(['Rock','Paper', 'Scissors'])
 
+    # Main game logic
     if choice == computer_choice:
         print(f"Its a tie! Both Chose {choice}\n")
         Done = True
